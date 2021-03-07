@@ -12,7 +12,7 @@ import { StyleCompiler, StyleManager } from "@paperbits/common/styles";
 
 @Component({
     selector: "page-host",
-    template: "<!-- ko if: contentViewModel --><!-- ko widget: contentViewModel, grid: {} --><!-- /ko --><!-- /ko -->"
+    template: "<paperbits-popup></paperbits-popup><!-- ko if: contentViewModel --><!-- ko widget: contentViewModel, grid: {} --><!-- /ko --><!-- /ko -->"
 })
 export class PageHost {
     public readonly contentViewModel: ko.Observable<ContentViewModel>;
